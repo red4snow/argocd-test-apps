@@ -10,6 +10,9 @@ spec:
       image: nginx:1.21.1
       ports:
         - containerPort: 80
+      resources:
+        requests:
+          memory: 128Gi
     - name: busybox-container
       image: busybox:1.33.1
       command: ["sleep", "infinity"]
