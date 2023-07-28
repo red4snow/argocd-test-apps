@@ -15,7 +15,7 @@ spec:
         - containerPort: 80
       resources:
         requests:
-          memory: 128Gi   # Set the memory request to 64MiB for the older Nginx version
+          memory: 32Mi   # Set the memory request to 64MiB for the older Nginx version
     - name: busybox-container
       image: busybox:1.33.1
       command: ["sleep", "infinity"]
