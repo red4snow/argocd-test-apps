@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-busybox-pod
+  namepsace: komodor-apps
+spec:
+  restartPolicy: Always
+  containers:
+    - name: nginx-container
+      image: nginx:1.21.1
+      ports:
+        - containerPort: 80
+    - name: busybox-container
+      image: busybox:1.33.1
+      command: ["sleep", "infinity"]
