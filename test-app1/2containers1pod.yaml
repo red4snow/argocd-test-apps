@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nginx-busybox-pod
+  name: nginx-busybox-pod2
 spec:
   restartPolicy: Always
   containers:
