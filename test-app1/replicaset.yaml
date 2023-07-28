@@ -4,7 +4,7 @@ metadata:
   name: httpd-replicaset
   namespace: komodor-apps
 spec:
-  replicas: 3
+  replicas: 5
   selector:
     matchLabels:
       app: httpd
