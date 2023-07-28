@@ -15,7 +15,6 @@ spec:
     spec:
       containers:
         - name: httpd-container
-          namespace: komodor-apps
           image: httpd:2.4.51-alpine
           ports:
             - containerPort: 80
