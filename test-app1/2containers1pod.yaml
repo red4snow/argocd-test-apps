@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: nginx-busybox-pod
-  namepsace: komodor-apps
+  namespace: komodor-apps
 spec:
   restartPolicy: Always
   containers:
