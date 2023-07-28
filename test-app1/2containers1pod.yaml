@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nginx-busybox-pod2
+  name: nginx-busybox-pod3
 spec:
   restartPolicy: Always
   containers:
@@ -13,9 +13,9 @@ spec:
       image: nginx:1.19.10
       ports:
         - containerPort: 80
-      resources:
-        requests:
-          memory: 32Mi   # Set the memory request to 64MiB for the older Nginx version
+     # resources:
+       # requests:
+      #    memory: 32Mi   # Set the memory request to 64MiB for the older Nginx version
     - name: busybox-container
       image: busybox:1.33.1
       command: ["sleep", "infinity"]
